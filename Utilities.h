@@ -11,4 +11,11 @@
 
 #include <iostream>
 
+void bilinearTransform(double acoefs[], double dcoefs[], double withFs);
+
+void designParametric(double* dcoefs, double center, double gain, double qval, double withFs);
+
+void designFirstOrderLowpass(double* dcoefs, double cutoff, double withFs);
+
+void designFirstOrderHighpass(double* dcoefs, double cutoff, double withFs);
 #endif /* defined(__DSPLibrary__Utilities__) */

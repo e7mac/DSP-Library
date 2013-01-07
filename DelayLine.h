@@ -11,4 +11,19 @@
 
 #include <iostream>
 
+class DelayLine {
+private:
+    int length;
+    int readHead, writeHead;
+    float *circularBuffer;
+public:
+    void setLength(const float withLength, float withFs);
+    void clearBuffer();
+    void advanceWriteHead();
+    void advanceReadHead();
+    void write(float withSample);
+    float read();
+};
+
+
 #endif /* defined(__DSPLibrary__DelayLine__) */

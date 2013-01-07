@@ -10,5 +10,24 @@
 #define __DSPLibrary__SinOsc__
 
 #include <iostream>
+#include <math.h>
+
+class SinOsc {
+    
+protected:
+    double sampleRate, phase, centerFrequency, frequency, amplitude, range;
+    
+public:
+    SinOsc();
+    void setSampleRate(double withSampleRate);
+    void reset();
+    void setCenterFrequency(float newFrequency);
+    void setFrequency(float input);// set the instantaneous frequency based on an 
+    void setAmplitude(float withAmplitude);
+    void setRange(double withRange);
+    void process (float& output);
+
+};
+
 
 #endif /* defined(__DSPLibrary__SinOsc__) */

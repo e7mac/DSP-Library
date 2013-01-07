@@ -10,5 +10,19 @@
 #define __DSPLibrary__LevelEstimator__
 
 #include <iostream>
+#include <math.h>
+
+class LevelEstimator
+{
+private:
+	double	b0, a1, levelEstimate;
+public:
+	LevelEstimator();
+	void setTau(double tau, double fs);
+	void reset();
+	void process (double input, double& output);
+	void process (float input, float& output);
+};
+
 
 #endif /* defined(__DSPLibrary__LevelEstimator__) */

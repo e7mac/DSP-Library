@@ -11,4 +11,15 @@
 
 #include <iostream>
 
+class Noise {
+    
+protected:
+    float amplitude;
+    
+public:
+    void setAmplitude(float withAmplitude);
+    void process(float& output);
+};
+
+
 #endif /* defined(__DSPLibrary__Noise__) */

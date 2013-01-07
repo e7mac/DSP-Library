@@ -9,6 +9,17 @@
 #ifndef __DSPLibrary__DSPLibraryInclude__
 #define __DSPLibrary__DSPLibraryInclude__
 
-#include <iostream>
+#include "SinOsc.h"
+#include "Noise.h"
+#include "InterpolatingDelayLine.h"
+#include "DelayLine.h"
+#include "Recorder.h"
+#include "GranularLine.h"
+#include "DeadZone.h"
+#include "SoftClip.h"
+#include "Biquad.h"
+#include "LevelEstimator.h"
+#include "Compressor.h"
+#include "Utilities.h"
 
 #endif /* defined(__DSPLibrary__DSPLibraryInclude__) */

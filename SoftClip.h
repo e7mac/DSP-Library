@@ -10,5 +10,18 @@
 #define __DSPLibrary__SoftClip__
 
 #include <iostream>
+#include <math.h>
+
+class SoftClip
+{
+protected:
+    float n;
+    
+public:
+    SoftClip();
+    void setN(float withN);
+    void process (float input, float& output);
+};
+
 
 #endif /* defined(__DSPLibrary__SoftClip__) */

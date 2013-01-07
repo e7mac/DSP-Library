@@ -11,4 +11,15 @@
 
 #include <iostream>
 
+class Biquad {
+protected:
+    double	b0, b1, b2, a1, a2, z1, z2;
+public:
+    Biquad();
+    void setCoefs(double* coefs);
+    void reset();
+    void process (float input, float& output);
+};
+
+
 #endif /* defined(__DSPLibrary__Biquad__) */

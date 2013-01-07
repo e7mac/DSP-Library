@@ -11,4 +11,20 @@
 
 #include <iostream>
 
+class Recorder {
+private:
+    int length;
+    int readHead, writeHead;
+    float *buffer;
+public:
+    void setLength(const float withLength, float withFs);
+    void clearBuffer();
+    void advanceWriteHead();
+    void advanceReadHead();
+    void write(float withSample);
+    float read();
+};
+
+
+
 #endif /* defined(__DSPLibrary__Recorder__) */
